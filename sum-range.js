@@ -1,9 +1,23 @@
-function range(start, end, step = 1) {
-  // Add code.
+function range(start, end, step = 1){
+  let list = [];
+  if (start < end){
+  	for(let i = start; i <= end; i += step){
+    	list.push(i);
+  	}
+  }
+  else{
+    for(let i = start; i >= end; i += step){
+    	list.push(i);
+  	}
+  }
+  return list;
 }
-
-function sum(numbers) {
-  // Add code.
+function sum (list){
+  let sum = 0;
+  for(let i = 0; i < list.length; i++){
+    sum += list[i];
+  }
+  return sum;
 }
 
 
